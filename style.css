@@ -1,0 +1,75 @@
+body{
+    position: absolute ;
+    background-color: rgb(179, 180, 170);
+    font-family: 'Georama', sans-serif;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    display: block;
+    border: blue 2px solid ;
+}
+
+a{
+    color: rgb(26, 106, 224);
+    font-style: oblique ;
+    text-decoration-style: solid;
+}
+
+a:hover{
+    color: orangered;
+}
+
+.left, .right{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.content{
+    padding: 20px ;
+}
+.left{
+    margin-left: 3%;
+}
+
+.right{
+    float: right ;
+    flex-direction: row;
+    align-items:flex-start;
+}
+
+nav{
+    position: fixed ;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.dark{
+    background-color: #222;
+    color: #eee;
+}
+
+h1{
+    font-size: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 5px;
+}
+
+h1:hover{
+    color: grey;
+}
+
+h2{
+    color: grey;
+}
+
+p{
+    font-size: 22px ;
+}

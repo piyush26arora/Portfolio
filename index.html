@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is my personal Portfolio, to showcase all my JavaScript Front-end Web-Development projects, like Music Player and Snake Game . It also includes my social media handles for Github , LinkedIn and Instagram . It also supports a theme toggler for user convinience . Dark Theme included .">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Arora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+    <link rel="icon" href="ThemeToggler.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark" onload = "startTimer()">
+    <div class="wrap">
+        <nav>
+            <button onclick="theme()" style="border-radius: 50%; height: 70px; width: 70px;">
+                <input type="image" height="50px" width="50px" style="border-radius: 50%;" src="ThemeToggler.png"> 
+            </button>
+        </nav>
+        
+        <div class="left">
+            <img src="1.jpg" alt="Sorry, the image file couldn't load at the moment.">  
+            <h1>Piyush Arora</h1>
+            <h2>Computer Science Student |<br> Web Developer</h2>
+        </div>
+        
+        <div class="right">
+           <div class="content more">
+                <p> 
+                    Well, Hi there, I'm Piyush Arora, a Computer Science student, web developer, cyclist, football and music enthusiast. 
+                    Things I've been excited about lately are React.js, server-side programming and cross-platform Application development. 
+                    I encourage the use of technology wherever possible and 
+                    I think that everything can be advanced with the help of it. If you also have any similar interests, we can connect using  <a target="_blank" rel="noopener noreferrer" href="https://github.com/piyush26arora">Github</a>, 
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/piyush-arora-681bbb167">LinkedIn</a> and <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/26.piyush">Instagram</a>.
+                </p>
+
+                <p> 
+                    I believe in creating something you really love, so all of my projects have an essence of reality.
+                    Some of my recent JavaScript projects include <a target="_blank" rel="noopener noreferrer" href="https://piyush26arora.github.io/NCSMusicPlayer">Music Player </a>  and the classic 
+                    <a target="_blank" rel="noopener noreferrer" href="https://piyush26arora.github.io/Snake">Nokia Snake Game</a> . 
+                    If you are interested in knowing more about my Front-end projects and deployments so far , you can <a target="_blank" rel="noopener noreferrer"  href="https://github.com/piyush26arora?tab=repositories">Click here.</a>
+                </p>
+
+                <p> 
+                    Cloud Technologies also catches my attention for its greatness. I really like the way in which these Technologies are changing our day-to-day routine to such a deep extent with such ease. Its influence today dominates, literally EVERYONE!!!
+                </p>
+                
+                <p> 
+                    Read this far, well now something about me, Yeahhh, I &#10084; cycling and whiskey, but not at the same time, xD .
+                </p>
+
+                <p> 
+                    Thanks for visiting, Happy Coding :)
+                </p>
+            </div>       
+        </div>
+    </div>
+
+    <script>
+
+        function theme() {
+            var body = document.body ;
+            body.classList.toggle("dark")
+        }
+
+        function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.querySelector("img").src = images[x];
+          }
+
+        function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = ["1.jpg" , "2.jpg" , "3.png","4.jpg"], x = -1;
+        
+    </script>
+
+
+</body>
+</html>
