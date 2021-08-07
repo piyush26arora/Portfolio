@@ -73,3 +73,10 @@ h2{
 p{
     font-size: 22px ;
 }
+
+
+@media(max-width: 400px) {
+    .right{
+        max-width: 95%;
+    }
+}
